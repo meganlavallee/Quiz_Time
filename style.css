@@ -1,0 +1,11 @@
+.timer {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+}
+
+.time {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
