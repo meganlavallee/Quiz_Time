@@ -6,7 +6,7 @@ const questionContainer = document.querySelector("#modern-photo")
 startBtn.addEventListener("click", function (e){});
 
 //Start Timer
-
+startTimer.addEventListener("click", start (e))
 
 //Hide Start Prompt
 startPrompt.style.display = "none";
