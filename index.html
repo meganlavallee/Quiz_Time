@@ -9,13 +9,52 @@
 </head>
 
 <body>
-    <h1>Welcome to the Quiz Game</h1>
-    <p>When did modern photography begin?</p>
-    <p>First commercially viable photographic process was called what?</p>
-    <p>The word photography was coined by Sir John Herschel in 1839.  It's basis is in the ___ language.</p>
-    <p>What was the first mass produced camera?</p>
-    <p>What is not a rule of compostion in photography?</p>
-    </body>
+    <div id="main">
+        <div id="header"></div>
+        <h1>Welcome to the Quiz Game</h1>
+        <form id="form1">
+
+        <h2>When did modern photography begin?</h2>
+        <label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />1730</label>
+        <label for="var_join"><input type="radio" name="variable" value="0" id="var_join" />1810</label>
+        <label for="var_info"><input type="radio" name="variable" value="25" id="var_info" />1830</label>
+        <label for="var_condition"><input type="radio" name="variable" value="0" id="var_condition"/>1750</label>
+        
+
+        <h2>First commercially viable photographic process was called what?</h2>
+        <label for="sub_string"><input type="radio" name="sub" value="25" id="sub_string"/>Daguerreotype Process</label>
+        <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>Obscura Image Projection</label>
+        <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />Collodion Process</label>
+        
+        
+        <h2>The word photography was coined by Sir John Herschel in 1839. It's basis is in the ___ language.</h2>
+        <label for="cat_string"><input type="radio" name="con" value="0" id="cat_string" />Italian</label>
+        <label for="cat_join"><input type="radio" name="con" value="25" id="cat_join" />Greek</label>
+        <label for="cat_info"><input type="radio" name="con" value="0" id="cat_info" />Latin</label>
+        <label for="cat_condition"><input type="radio" name="con" value="0" id="cat_condition" />Arabic</label>
+        
+        <h2>What was the first mass produced camera?</h2>
+        <label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" />Brownie</label>
+        <label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" />Kodak</label>
+        <label for="if_info"><input type="radio" name="ifstate" value="0" id="if_info" />Raisecamera</label>
+        
+
+        <h2>What is not a rule of compostion in photography?</h2>
+        <label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" />Leading Lines</label>
+        <label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" />Reduce Clutter</label>
+        <label for="if_info"><input type="radio" name="ifstate" value="0" id="if_info" />Color Contrast</label>
+        <label for="if_condition"><input type="radio" name="ifstate"  value="25" id="if_condition" />All Are</label>
+        
+        <button type="submit" value="Submit">Submit</button>
+        
+        </form>
+    </div>
+
+    
+        
+        
+</body>
+
+
 
 </html>
-
