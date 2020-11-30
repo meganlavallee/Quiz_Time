@@ -38,7 +38,7 @@ function nextQuestion() {
   document.body.innerHTML = "";
   ++questionIndex;
   document.write(myQuiz[questionIndex].ques + "<br />");
-
+  
   for (var j = 0; j < myQuiz[questionIndex].choices.length; j++) {
     document.write(
       "<input type=radio id=myRadio name=radAnswer>" +
@@ -56,4 +56,18 @@ function nextQuestion() {
   }
 }
 
-nextQuestion(); 
+function questionCheck() {
+  if (questionIndex < myQuiz.length) {
+    nextQuestion()
+  } else {
+    displayScore()
+  }
+}
+
+function displayScore() {
+  // Hiding Questions
+  // Stopping Timer
+  // Display Score
+}
+
+questionCheck();
