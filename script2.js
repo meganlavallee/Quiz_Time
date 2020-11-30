@@ -1,5 +1,4 @@
 var myQuiz = [
-
   {
     ques: "When did modern photography begin?",
     choices: ["1730", "1810", "1830", "1750"],
@@ -48,7 +47,7 @@ function nextQuestion() {
     );
   }
 
-  if (questionIndex < myQuiz.length - 1) {
+  if (questionIndex < myQuiz.length) {
     var nextButton = document.createElement("input");
     nextButton.type = "button";
     nextButton.value = "Submit";
