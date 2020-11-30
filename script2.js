@@ -32,29 +32,29 @@ var myQuiz = [
   },
 ];
 
-var questionIndex = -1; // Not started
+var questionIndex = 0; // Not started
 
 function nextQuestion() {
   document.body.innerHTML = "";
   document.write(myQuiz[questionIndex].ques + "<br />");
-  ++questionIndex;
-
+  
   for (var j = 0; j < myQuiz[questionIndex].choices.length; j++) {
     document.write(
       "<input type=radio id=myRadio name=radAnswer>" +
       myQuiz[questionIndex].choices[j] +
       "<br />"
-    );
+      );
+    }
+    
+    if (questionIndex < myQuiz.length) {
+      var nextButton = document.createElement("input");
+      nextButton.type = "button";
+      nextButton.value = "Submit";
+      nextButton.addEventListener("click", questionCheck);
+      document.body.appendChild(nextButton);
+      ++questionIndex;
+    }
   }
-
-  if (questionIndex < myQuiz.length) {
-    var nextButton = document.createElement("input");
-    nextButton.type = "button";
-    nextButton.value = "Submit";
-    nextButton.addEventListener("click", nextQuestion);
-    document.body.appendChild(nextButton);
-  }
-}
 
 function questionCheck() {
   if (questionIndex < myQuiz.length) {
@@ -65,9 +65,44 @@ function questionCheck() {
 }
 
 function displayScore() {
+  console.log("End")
   // Hiding Questions
   // Stopping Timer
   // Display Score
 }
 
 questionCheck();
+
+var myTimer = {
+  
+}
+
+// var timeEl = document.querySelector(".time");
+// var mainEl = document.getElementById("main");
+
+// var secondsLeft = 10;
+
+// function setTime() {
+//   var timerInterval = setInterval(function() {
+//     secondsLeft--;
+//     timeEl.textContent = secondsLeft + " seconds left till colorsplosion.";
+
+//     if(secondsLeft === 0) {
+//       clearInterval(timerInterval);
+//       sendMessage();
+//     }
+
+//   }, 1000);
+// }
+
+// function sendMessage() {
+//   timeEl.textContent = " ";
+
+//   var imgEl = document.createElement("img");
+
+//   imgEl.setAttribute("src", "images/image_1.jpg");
+//   mainEl.appendChild(imgEl);
+
+// }
+
+setTime();
