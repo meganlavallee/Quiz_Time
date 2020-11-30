@@ -36,9 +36,9 @@ var questionIndex = -1; // Not started
 
 function nextQuestion() {
   document.body.innerHTML = "";
-  ++questionIndex;
   document.write(myQuiz[questionIndex].ques + "<br />");
-  
+  ++questionIndex;
+
   for (var j = 0; j < myQuiz[questionIndex].choices.length; j++) {
     document.write(
       "<input type=radio id=myRadio name=radAnswer>" +
