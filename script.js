@@ -53,7 +53,8 @@ function nextQuestion() {
       ++questionIndex;
     }
   }
-
+  
+  // Hiding Questions
 function questionCheck() {
   if (questionIndex < myQuiz.length) {
     nextQuestion()
@@ -62,12 +63,15 @@ function questionCheck() {
   }
 }
 
+// Display Score
 function displayScore() {
+  
   console.log("End")
 }
 
 questionCheck();
 
+// Timer
 var myTimer = {
 }
 
@@ -77,14 +81,13 @@ var myTimer = {
     console.log("Timer Working")
 }
 
-
-
 var secondsLeft = 10;
 
 function setTime() {
   var timerInterval = setInterval(function() {
     secondsLeft--;
     
+    // Stopping Timer
     if(secondsLeft === 0) {
       clearInterval(timerInterval);
       displayScore();
@@ -95,6 +98,11 @@ function setTime() {
 
 setTime();
 
-// Hiding Questions
-// Stopping Timer
-// Display Score
+// Local Storage
+function correctAnswer() {
+  window.localStorage.setItem('user', JSON.stringify(correctAnswer));
+  window.localStorage.setItem('name', 'key');
+
+  JSON.parse(window.localStorage.getItem('user'));
+  window.localStorage.getItem('user');
+  }
