@@ -20,6 +20,8 @@ Photography is an interesting topic that has evolved a lot during it's lifetime 
 Link to deployed app
 https://meganlavallee.github.io/Quiz_Time/
 
+![image](https://user-images.githubusercontent.com/73404164/102135945-f58fa800-3e15-11eb-98e9-ccabe25f6189.png)
+
 Contact Information: 
 Megan Lavallee
 megan.lavallee@yahoo.com
